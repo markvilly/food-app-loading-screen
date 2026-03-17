@@ -11,8 +11,8 @@ import Animated, {
   SharedValue,
 } from 'react-native-reanimated';
 
-const MAX_DRAG = 150;
-const DRAG_DAMPING = 0.45;
+const MAX_DRAG = 75;
+const DRAG_DAMPING = 0.22;
 
 interface PullContextValue {
   dragY: SharedValue<number>;

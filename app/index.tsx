@@ -56,12 +56,12 @@ function HomeContent() {
           scrollEventThrottle={16}
         >
           {/* Header — lightest, moves almost immediately, subtle scaleX breath */}
-          <PullLayer multiplier={0.85} dragDelay={0} snapDelay={120} breathe>
+          <PullLayer multiplier={0.42} dragDelay={0} snapDelay={60} breathe>
             <Header />
           </PullLayer>
 
           {/* Category row — medium lag */}
-          <PullLayer multiplier={0.65} dragDelay={30} snapDelay={80}>
+          <PullLayer multiplier={0.32} dragDelay={15} snapDelay={40}>
             <View style={styles.sectionRow}>
               <Text style={styles.sectionTitle}>Popular Food</Text>
               <Text style={styles.viewAll}>view all</Text>
@@ -87,12 +87,12 @@ function HomeContent() {
           </PullLayer>
 
           {/* Promo Banner — heavier */}
-          <PullLayer multiplier={0.50} dragDelay={60} snapDelay={40}>
+          <PullLayer multiplier={0.25} dragDelay={30} snapDelay={20}>
             <PromoBanner />
           </PullLayer>
 
           {/* Food Grid — heaviest, lags the most, snaps back first */}
-          <PullLayer multiplier={0.35} dragDelay={100} snapDelay={0}>
+          <PullLayer multiplier={0.17} dragDelay={50} snapDelay={0}>
             <View style={styles.gridContainer}>
               {FOOD_ITEMS.map((item) => (
                 <FoodCard
