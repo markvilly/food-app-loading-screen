@@ -14,6 +14,7 @@ import FoodCard from '../components/FoodCard';
 import {
   HandRefreshWrapper,
   PullLayer,
+  RefreshZone,
   usePullContext,
 } from '../components/HandRefreshWrapper';
 
@@ -107,6 +108,8 @@ function HomeContent() {
           </PullLayer>
         </Animated.ScrollView>
       </GestureDetector>
+
+      <RefreshZone />
 
       <LinearGradient
         colors={['rgba(242, 238, 236, 1)', 'rgba(242, 238, 236, 0)']}
